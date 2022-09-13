@@ -1,0 +1,21 @@
+Package: testpypkg
+Type: Package
+Title: Test Config/reticulate
+Version: 0.1.0
+Authors@R: c(
+    person("Florian", "Detsch", , "fdetsch@web.de", role = c("cre", "aut"))
+  )
+Description: Test automatic configuration of Python dependencies with
+    Config/reticulate.
+License: MIT + file LICENSE
+Imports:
+    reticulate
+Encoding: UTF-8
+Config/reticulate:
+  list(
+    packages = list(
+      list(package = 'numpy', pip = TRUE),
+      list(package = 'pandas', pip = TRUE)
+    )
+  )
+RoxygenNote: 7.2.1
